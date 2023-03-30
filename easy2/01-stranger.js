@@ -2,26 +2,44 @@
 *****************************START PEDAC*****************************
 ---------------------------PROBLEM-----------------------------------
 
-Input: Given 2 strings
+Input: 1 array & 1 object
 Output: Return 1 string
 
 
 ---------------------------RULES--------------------------------------
 Explicit:
-  - strings are of different lengths
+  - array and object 
 
 Implicit:
   -
 
 EdgeCases:
       i.e.
-      - empty or null or None values
-      - zero or negative values
+      - empty or null or None values: No 
+      - zero or negative values: No 
 
 --------------------------MENTAL MODEL---------------------------------
+create const function that takes two inputs an array and object.
+after transform the array into a string.
+make sure to pull the desired keys from the object 
+then return a string that combines the array string and the values of 
+key from the object
 --------------------------EXAMPLES-------------------------------------
+function = (array, object) => {
+return arraystring + objectkey + objectkey}
+array =["dave", "mello", "silly"]
+arraystring = "dave mello silly" 
+object = {title: "lifter", occupation: "trainner"}
+objectkey = object.title
+objectkey = object.occupation
+
 --------------------------DATA STRUCTURES------------------------------
+String, array, object
 --------------------------ALGORITHM------------------------------------
+-create a const array function that takes an array and object
+-- return a string 
+  -- string being returned needs to array as concatenated string and 
+  -- concatenate the object by keys to get the values from object key
 --------------------------CODE WITH INTENT-----------------------------
 
 *****************************END PEDAC*******************************
