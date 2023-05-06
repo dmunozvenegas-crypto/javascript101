@@ -8,4 +8,27 @@ sequence(5, 1);          // [1, 2, 3, 4, 5]
 sequence(4, -7);         // [-7, -14, -21, -28]
 sequence(3, 0);          // [0, 0, 0]
 sequence(0, 1000000);    // []
-*/ 
+*/
+// current index needs to be multiplied by the second integer that you are give the first is the number of times that your loop needs to execute and make sure to start at number one because if you start at number zero your function will fail 
+
+const sequence = (r, m) => {
+	let result = [];
+	if(r !== 0) {
+	for( let i = 1; i <= r; i++){
+		result.push(i * m);
+		}
+
+	}
+	else{
+		return result
+	}
+	return result
+}
+	
+
+console.log(sequence(5, 1));          // [1, 2, 3, 4, 5]
+console.log(sequence(4, -7));         // [-7, -14, -21, -28]
+console.log(sequence(3, 0));          // [0, 0, 0]
+console.log(sequence(0, 1000000));    // []
+
+
