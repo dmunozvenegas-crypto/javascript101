@@ -13,34 +13,37 @@ reverseWords('Launch School');            // "hcnuaL loohcS"
 
 
 const reverseWords = (word) => {
-	let result = []; 
+	let result = [];
 	let arr = word.split(" ")
-	console.log("logging the first split of the word")
-	console.log(arr)
+
 	for( let i = 0; i < arr.length; i++){
 		let cI = arr[i];
-		console.log("current index")
-		console.log(cI)
-		let s = "";
-		console.log("Loggin empty string\n " + s)
+	
+		
+		let s ="";
 		if(cI.length >4) {
 			for(let x = cI.length -1; x >= 0; x--) {
+				
+				
 				s += cI[x];
-							}
+			
+				
+				
+			}
+			result.push(s)
 		}
 		else{
 			result.push(cI)
 		}
-		result.push(s)
-	}
-	
+		
+	}	
 	return result.join(" ");
 }
 
-//console.log(reverseWords('Professional')==="lanoisseforP")
+console.log(reverseWords('Professional')==="lanoisseforP")
 
 
-//console.log(reverseWords('Launch School')==="hcnuaL loohcS")
+console.log(reverseWords('Launch School')==="hcnuaL loohcS")
 console.log(reverseWords('walk around the block')==="walk dnuora the kcolb")
 
 
