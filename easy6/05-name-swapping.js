@@ -2,3 +2,21 @@
  
 swapName('Joe Roberts');    // "Roberts, Joe"
  */
+const swapName = (str) => {
+	let arr = str.split(" ")
+	let arrL = arr.length
+	let a = [];
+	for( let x = 0; x < arrL; x++){
+	
+		a += arr.pop() + ", ";
+	}
+	let arrM = a.split("")
+	
+	arrM.pop();
+	arrM.pop();
+	let result = arrM.join("")
+	return result 
+}
+
+console.log(swapName("Joe Roberts")==="Roberts, Joe")
+
