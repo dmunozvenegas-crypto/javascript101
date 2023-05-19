@@ -38,8 +38,11 @@ const isBalanced = (str) => {
 		
 	}
 	let correct = front2 +back2;
-	
-	if(front === back && correct === seq) {
+	console.log(correct)
+	console.log(seq)
+	console.log(front)
+	console.log(back)
+	if(front === back && correct === seq ) {
 		flag = true;
 	}
 	else{
@@ -55,6 +58,7 @@ console.log(isBalanced("What is) this?") === false);
 console.log("**********************************")
 console.log(isBalanced("What (is this?") === false);
 console.log("**********************************")
+console.log("Test case its missing because the sequence is no the same")
 console.log(isBalanced("((What) (is this))?") === true);
 console.log("**********************************")
 console.log(isBalanced("((What)) (is this))?") === false);
